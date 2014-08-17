@@ -3,6 +3,7 @@
 <html lang="en"> 
 <head> 
 	<meta charset="UTF-8" /> 
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/screen.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
@@ -27,7 +28,7 @@
 	<header>
 		<section id="myintro" class="intro">
 			<nav class="nav right">
-				<ul>
+				<ul class="phone-hide">
 					<li><a class="scroll" href="#myintro">Intro</a></li>
 					<li><a class="scroll" href="#myskills">Offerings</a></li>
 					<li><a class="scroll" href="#myprocess">Process</a></li>
@@ -49,7 +50,8 @@
 
 		<h2 class="title">my SKILL sets</h2>
 
-		<div class="row-one wow animated fadeInLeft" style="visibility: visible; -webkit-animation-delay: 0; -moz-animation-delay: 0; animation-delay: 0;">
+		<div class="row-one animated" data-animated="fadeInLeft" style="visibility: visible; -webkit-animation-delay: 0; -moz-animation-delay: 0; animation-delay: 0;">
+			
 			<section class="services left">
 				<img src="images/frontend.png" class="offer-icon left" />
 				<div class="offer right spaceRight">
@@ -73,7 +75,7 @@
 
 		<div class="clear"></div>
 
-		<div class="row-two wow animated fadeInRight" style="visibility: visible;">
+		<div class="row-two animated" data-animated="fadeInRight" style="visibility: visible;">
 			<section class="services left">
 				<img src="images/branding2.png" class="offer-icon right spaceRight" />
 				<div class="offer left">
@@ -104,7 +106,7 @@
 		<h2 class="title">the PROCESS</h2>
 	
 		<section class="center"> 
-			<div class="step step-margin">
+			<div class="step">
 
 				<div class="step-icon">
 					<img src="images/plan.svg" class="icon">
@@ -123,7 +125,7 @@
 			
 		
 
-			<div class="step step-margin">
+			<div class="step">
 
 				<div class="step-icon">
 					<img src="images/create.svg" class="extra icon">
@@ -141,7 +143,7 @@
 			
 			</div>
 
-			<div class="step step-margin">
+			<div class="step">
 
 				<div class="step-icon">
 					<img src="images/launch.svg" class="icon">
@@ -173,7 +175,7 @@
 		<div class="about right">
 			<h2>Hey Midi</h2>
 			<span>This site was built not only as a way of displaying my work in a central location but as an excuse to play around with new libraries and tools. </span>
-			<span>CSS/HTML, jQuery, Sass, WOW.js, animate.js</span>
+			<span>CSS/HTML, jQuery, Sass, Compass, waypoints.js, animate.css</span>
 		</div>
 		<div class="clear"></div>
 	</section>
@@ -308,10 +310,21 @@ $(window).scroll(function() {
     }
 });
 </script>
-<!--animate-->
-<script src="scripts/wow.min.js"></script>
+
+<!--animate on view-->
+<script src="scripts/waypoints.min.js"></script>
 <script>
- new WOW().init();
+	//Animate from top
+	$('.animated').waypoint(function() {
+		$(this).toggleClass($(this).data('animated'));
+	},
+	{ offset: 'bottom-in-view' });
+
+	//Animate from bottom
+	$('.animated').waypoint(function() {
+		$(this).toggleClass($(this).data('animated'));
+	});
 </script>
+
 </body> 
 </html>
