@@ -1,0 +1,81 @@
+
+#sendemail{
+	@media all and (max-width: $bp-small) {
+		display: none;
+	}
+
+	form {
+		width: 80%;
+		margin: 0 auto;
+		padding-bottom: $section-padding;
+		padding-top: $section-padding;
+	}
+
+
+	input, textarea {
+		border-radius: 4px;
+		border: none;
+	    border:solid 2px #ccc;
+	    border-radius: 10px;
+	    display: block;
+	    font-family: $font-stack;
+	    font-size: 20px;
+	    padding: 10px;
+	    font-weight: lighter;
+	    font-color: $font-color-primary;
+			&:focus {
+				border-color: $tertiary-color;
+				outline: 0 !important;
+				background-color: none;
+			}
+	}
+
+	textarea {
+		width: 98.3%;
+	}
+
+	.sender-info {
+		width: 47%;
+	    height: 30px;
+	    display: inline;
+	    margin-bottom: 20px;
+	    @media all and (max-width: $bp-large) {
+	    	width: 100%;
+	    	float: left;
+	    }
+	}
+	.sub-button {
+		background-color: $tertiary-color;
+		width: 200px;
+		height: 45px;
+		margin: 0 auto;
+		padding: 5px;
+		display: block;
+		font-size: 18px;
+	    font-family: $font-stack;
+	    color: $font-color-secondary;
+	    border: none;
+	}
+
+	::-webkit-input-placeholder {
+   		font-size: 20px;
+   		font-family: $font-stack;
+	}
+
+	:-moz-placeholder {
+	   font-size: 20px;
+	   font-family: $font-stack;
+	}
+
+	::-moz-placeholder {
+	   font-size: 20px;
+	   font-family: $font-stack;
+	}
+
+	:-ms-input-placeholder {  
+	   font-size: 20px; 
+	   font-family: $font-stack;
+	}
+
+}
+

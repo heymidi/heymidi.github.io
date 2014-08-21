@@ -4,8 +4,8 @@
 <head> 
 	<meta charset="UTF-8" /> 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/screen.css">
-	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="stylesheets/styles.css">
+	<link rel="stylesheet" href="stylesheets/animate.css">
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js" type="text/javascript"></script>
 	<script src="scripts/script.js" type="text/javascript">
@@ -71,6 +71,7 @@
 				</div>
 				<div class="clear"></div>
 			</section>
+			<div class="clear"></div>
 		</div>
 
 		<div class="clear"></div>
@@ -94,6 +95,7 @@
 				</div>
 				<div class="clear"></div>
 			</section>
+			<div class="clear"></div>
 		</div>
 
 		<div class="clear"></div>
@@ -264,13 +266,13 @@
 			<a href="https://twitter.com/ReganLPerkins"><img src="images/twitter-p.svg" alt="twitter" class="social-icon"></a>
 			<a href="http://ca.linkedin.com/pub/dir/Regan/Perkins"><img src="images/linkedin-p.svg" alt="linkedin" class="social-icon"></a>
 		</div>
-		<div id="send-email">
-			<form action="MAILTO:reganlperkins@gmail.com" method="post" enctype="text/plain">
+		<div id="sendemail">
+			<form name="email" action="MAILTO:reganlperkins@gmail.com" method="post" enctype="text/plain">
 				<input placeholder="Name" type="text" name="name" class="sender-info left">
 				<input placeholder="Email" type="text" name="email" class="sender-info right">
 				<div class="clear"></div>
 				<textarea placeholder="Message" name="message" class="sender-message" rows="10" cols="25"></textarea><br />
-				<input type="submit" value="Send Message" class="button">
+				<input type="button" value="Send Message" class="sub-button" onClick="submitForm()">
 			</form>
 		</div>
 
@@ -307,6 +309,13 @@
 
 </div>
 
+<!-- send email-->
+<script>
+	function submitForm() {
+		document.email.submit();
+		document.email.reset();
+	}
+</script>
 
 <!-- toggle class on scroll -->
 <script>
@@ -330,10 +339,10 @@ $(window).scroll(function() {
 	},
 	{ offset: 'bottom-in-view' });
 
-	//Animate from bottom
+	// Animate from bottom
 	$('.animated').waypoint(function() {
 		$(this).toggleClass($(this).data('animated'));
-	});
+	}); 
 </script>
 
 </body> 

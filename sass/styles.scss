@@ -1,0 +1,330 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset"; /* already here */
+@import "config";
+@import "email";
+
+
+h1, h2, h3, p, li, span {
+	font-family: $font-stack;
+	font-weight: 100;
+}
+
+a {
+	text-decoration: none;
+	color: $font-color-secondary;
+}
+
+.wrapper {}
+
+.nav {
+	width: 100%;
+	padding-right: 30px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	position: fixed;
+	// set animation
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    z-index: 1000;
+	
+	ul {
+		width: 450px;
+		float: right;
+	}
+
+	li {
+		font-size: 18px;
+		list-style-type: none;
+		display: inline-block; 
+		color: $font-color-secondary;
+		margin-right: 15px;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	@media all and (max-width: $bp-small) {
+		display: none;
+	}
+}
+
+.sticky {
+	background: #5B4954;
+}
+
+.intro {
+	background-image: url('../images/heymidi-dark.jpg');
+	background-position: center bottom;
+	background-repeat: none;
+	background-size: cover;
+	height: 800px;
+	width: 100%;
+
+	h1 {
+		font-size: 70px;
+		color: $font-color-secondary;
+		text-align: center;
+	}
+	img {
+		width: 300px;
+		margin: 0 auto;
+		display: block;
+		padding-top: 80px;
+	}
+}
+
+.title {
+	font-size: 50px;
+	color: $primary-color;
+	text-align: center;
+	padding-bottom: $section-padding;
+}
+
+.offerings {
+	width: 100%;
+	padding-top: $section-padding;
+	padding-bottom: $section-padding;
+	background-image: url('../images/pw-pattern.png');
+
+		
+	h3 {
+		font-size: 23px;
+		color: $primary-color;
+		padding-bottom: 5px;
+	}
+	span {
+		font-size: 16px;
+		letter-spacing: 0.01em;
+    	line-height: 24px;
+		color: $font-color-primary;
+	}
+
+	@media all and (min-width: $bp-large) {
+		.row-one {
+			width: 90%;
+			margin: 0 auto;
+		}
+
+		.row-two {
+			width: 90%;
+			margin: 0 auto;
+			margin-top: 50px;
+		}
+		.spaceLeft {
+			margin-left: 10%;
+		}
+		.spaceRight {
+			margin-right: 10%;
+		}
+	}
+}
+
+.offer {
+		float: right;
+		width: 300px;
+	
+	@media all and (max-width: $bp-large) {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+}
+
+.offer-icon {
+	float: left;
+	width: 180px;
+	@media all and (max-width: $bp-med) {
+		display: none;		
+	}
+}
+
+.services {
+	width: 45%;
+	min-width: 400px;
+}
+
+.step-icon {
+	width: 200px;
+	height: 200px;
+	border: 8px solid $primary-color;
+	border-radius: 50%;
+	margin: 0 auto;
+	
+	.icon {
+   		margin: 20px auto 0;
+   		width: 120px;
+
+   		&.extra {
+			padding-top: 20px;
+		}
+	}
+}
+
+.step {
+	width: 300px;
+	float: left;
+	padding-bottom: $section-padding;
+	margin-left: 1.8%;
+	margin-right: 1.8%;
+}
+
+.center {
+	margin: 0 auto;
+	max-width: 1050px;
+}
+
+.process {
+	width: 100%;
+	padding-top: $section-padding;
+	text-align: center;
+	background-image: url('../images/pw-pattern.png');
+
+	h3 {
+		font-size: 23px;
+		color: $primary-color;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	li {
+		font-size: 16px;
+		font-weight: 300;
+		letter-spacing: 0.01em;
+    	line-height: 24px;
+		color: $font-color-primary;
+	}
+}
+
+.works {
+	width: 80%;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: $section-padding;
+	padding-bottom: $section-padding;
+	
+
+	&.blue-background {
+		background-color: $primary-color;
+	}
+	&.dark-background {
+		background-color: $secondary-color;
+	}
+	&.green-background {
+		background-color: $tertiary-color;
+	}
+	h2 {
+			font-size: 50px;
+		color: $font-color-secondary;
+		padding-bottom:20px;
+	}
+	span {
+		font-size: 18px;
+		font-weight: 300;
+		letter-spacing: 0.01em;
+    	line-height: 24px;
+		color: $font-color-secondary;
+		margin-bottom: 30px;
+		display: block;
+	}
+
+}
+.about {
+	width: 45%;
+	min-width: 300px;
+	@media all and (max-width: $bp-large) {
+		float: left;
+		margin: 0 auto;
+	}
+}
+
+.profile {
+	width: 80%;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: $section-padding;
+	padding-bottom: $section-padding;
+	background-color: #FBFCFC;
+	
+	h2 {
+		font-size: 24px;
+		margin-bottom: 10px;
+		margin-top: 20px;
+	}
+	span {
+		line-height: 26px;
+		font-size: 16px;
+		margin-bottom: 10px;
+		display: block;
+	}
+	img {
+		max-width: 450px;
+	}
+	@media all and (max-width: $bp-large) {
+		img {
+			width: 100%;
+		}
+		span {
+			width: 100%;
+		}
+	}
+}
+
+.contact {
+	background-image: url('../images/social.jpg');
+	background-repeat: none;
+	background-size: cover;
+	background-position: center bottom;
+	text-align: center;
+	padding-top: $section-padding;
+	padding-bottom: $section-padding;
+
+	h4 {
+		font-weight: bold;
+		padding-bottom: 20px;
+		color: $font-color-secondary;
+	}
+}
+
+.row {
+	margin-top: 70px;
+}
+
+.contact-details {
+	width: 33.33%;
+	float: left;
+
+	li {
+		list-style-type: none;
+		font-size: 20px;
+		font-weight: 200;
+		line-height: 28px;
+		color: $font-color-secondary;	
+	}
+	@media all and (max-width: $bp-small) {
+		display: none;
+	}
+}
+
+.icon-row {
+	margin: 0 auto;
+	width: 270px;
+}
+
+.social-icon {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.right {
+	float: right;
+}
+.left {
+	float: left;
+}
+
+.clear {
+	clear: both;
+}
