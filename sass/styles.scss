@@ -57,6 +57,10 @@ a {
 	background: #5B4954;
 }
 
+.nav-color-change {
+	color: #999;
+}
+
 .intro {
 	background-image: url('../images/heymidi-dark.jpg');
 	background-position: center bottom;
@@ -233,6 +237,16 @@ a {
 		margin-bottom: 30px;
 		display: block;
 	}
+	.view-site {
+		border: 1px solid #fff;
+	    color: #fff;
+	    font-family: $font-stack;
+	    font-size: 18px;
+	    font-weight: 300;
+	    padding: 10px 30px;
+	    text-align: center;
+	    width: 120px;
+		}
 
 }
 .about {
