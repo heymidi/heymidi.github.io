@@ -144,7 +144,13 @@ a {
 
 .services {
 	width: 45%;
-	min-width: 400px;
+	min-width: 300px;
+
+	@media all and (max-width: $bp-med) {
+			width: 90%;
+			padding-left: 10px;
+			padding-right: 10px;
+	}
 }
 
 
@@ -220,7 +226,7 @@ a {
 		background-color: $tertiary-color;
 	}
 	h2 {
-			font-size: 50px;
+		font-size: 50px;
 		color: $font-color-secondary;
 		padding-bottom:20px;
 	}
@@ -242,26 +248,23 @@ a {
 	    padding: 10px 30px;
 	    text-align: center;
 	    width: 120px;
+	}
+	img {
+		width: 45%;
+	}
+	@media all and (max-width: $bp-med) {
+		img {
+			width: 250px;
 		}
+	}
 
 }
 .about {
+	
+	@media all and (min-width: $bp-med) {
 	width: 45%;
 	min-width: 300px;
-	@media all and (max-width: $bp-large) {
-		float: left;
-		margin: 0 auto;
-	}
-}
 
-.profile {
-	width: 80%;
-	padding-left: 10%;
-	padding-right: 10%;
-	padding-top: $section-padding;
-	padding-bottom: $section-padding;
-	background-color: #FBFCFC;
-	
 	h2 {
 		font-size: 24px;
 		margin-bottom: 10px;
@@ -273,6 +276,34 @@ a {
 		margin-bottom: 10px;
 		display: block;
 	}
+	
+		float: left;
+		margin: 0 auto;
+	}
+	@media all and (max-width: $bp-small) {
+
+		h2 {
+			font-size: 24px;
+			margin-bottom: 10px;
+			margin-top: 20px;
+		}
+		span {
+			line-height: 26px;
+			font-size: 16px;
+			margin-bottom: 10px;
+			display: block;
+		}
+	}
+}
+
+.profile {
+	width: 80%;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: $section-padding;
+	padding-bottom: $section-padding;
+	background-color: #FBFCFC;
+	
 	img {
 		max-width: 400px;
 	}
@@ -334,15 +365,24 @@ a {
 
 .right {
 	float: right;
+	@media all and (max-width: $bp-med) {
+		float: none;
+		clear: both;
+	}
 }
 .left {
 	float: left;
+	@media all and (max-width: $bp-med) {
+		float: none;
+		clear: both;
+	}
 }
 
 .clear {
 	clear: both;
 }
 
+/* animations */
 .fade-right{
     opacity:0;
     transform:translateX(-30px);

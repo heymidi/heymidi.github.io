@@ -1,3 +1,7 @@
+
+/* =================
+nav scroll
+=====================*/
 jQuery(document).ready(function($) {
  
 	$(".scroll").click(function(event){		
@@ -5,3 +9,4 @@ jQuery(document).ready(function($) {
 		$('html,body').animate({scrollTop:$(this.hash).offset().top-60}, 500);
 	});
 })
+
