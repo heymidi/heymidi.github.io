@@ -342,3 +342,26 @@ a {
 .clear {
 	clear: both;
 }
+
+.fade-right{
+    opacity:0;
+    transform:translateX(-30px);
+    -webkit-transition: -webkit-transform .6s ease-in,opacity .8s ease-in;
+    transition: transform .6s ease-in,opacity .8s ease-in;
+}
+.fade-right.in{
+    opacity:1;
+    transform:translateX(0px);
+}
+
+.fade-left{
+    opacity:0;
+    transform:translateX(30px);
+    -webkit-transition: -webkit-transform .6s ease-in,opacity .8s ease-in;
+    transition: transform .6s ease-in,opacity .8s ease-in;
+}
+
+.fade-left.in{
+    opacity:1;
+    transform:translateX(0px);
+}

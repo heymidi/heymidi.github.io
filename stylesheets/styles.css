@@ -534,3 +534,31 @@ a {
 .clear {
   clear: both;
 }
+
+/* line 346, ../sass/styles.scss */
+.fade-right {
+  opacity: 0;
+  transform: translateX(-30px);
+  -webkit-transition: -webkit-transform .6s ease-in,opacity .8s ease-in;
+  transition: transform .6s ease-in,opacity .8s ease-in;
+}
+
+/* line 352, ../sass/styles.scss */
+.fade-right.in {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+/* line 357, ../sass/styles.scss */
+.fade-left {
+  opacity: 0;
+  transform: translateX(30px);
+  -webkit-transition: -webkit-transform .6s ease-in,opacity .8s ease-in;
+  transition: transform .6s ease-in,opacity .8s ease-in;
+}
+
+/* line 364, ../sass/styles.scss */
+.fade-left.in {
+  opacity: 1;
+  transform: translateX(0px);
+}
