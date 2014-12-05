@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,46 +24,46 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+/* line 116, ../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
@@ -96,7 +96,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 /* line 26, ../sass/_email.scss */
 #sendemail input:focus, #sendemail textarea:focus {
-  border-color: #b4c494;
+  border-color: #B4C494;
   outline: 0 !important;
   background-color: none;
 }
@@ -120,7 +120,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 /* line 47, ../sass/_email.scss */
 #sendemail .sub-button {
-  background-color: #b4c494;
+  background-color: #B4C494;
   width: 200px;
   height: 45px;
   margin: 0 auto;
@@ -128,7 +128,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
   font-size: 18px;
   font-family: "Lato", "Arial", sans-serif;
-  color: white;
+  color: #ffffff;
   border: none;
 }
 /* line 60, ../sass/_email.scss */
@@ -161,7 +161,7 @@ h1, h2, h3, p, li, span {
 /* line 16, ../sass/styles.scss */
 a {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
 }
 
 /* line 23, ../sass/styles.scss */
@@ -185,7 +185,7 @@ a {
   font-size: 18px;
   list-style-type: none;
   display: inline-block;
-  color: white;
+  color: #ffffff;
   margin-right: 15px;
 }
 /* line 47, ../sass/styles.scss */
@@ -216,7 +216,7 @@ a {
 /* line 68, ../sass/styles.scss */
 .intro h1 {
   font-size: 70px;
-  color: white;
+  color: #ffffff;
   text-align: center;
 }
 /* line 73, ../sass/styles.scss */
@@ -230,7 +230,7 @@ a {
 /* line 81, ../sass/styles.scss */
 .title {
   font-size: 50px;
-  color: #2fb7c5;
+  color: #1ABAC5;
   text-align: center;
   padding-bottom: 50px;
 }
@@ -245,7 +245,7 @@ a {
 /* line 95, ../sass/styles.scss */
 .offerings h3 {
   font-size: 23px;
-  color: #2fb7c5;
+  color: #1ABAC5;
   padding-bottom: 5px;
 }
 /* line 100, ../sass/styles.scss */
@@ -312,7 +312,7 @@ a {
 .step-icon {
   width: 200px;
   height: 200px;
-  border: 8px solid #2fb7c5;
+  border: 8px solid #1ABAC5;
   border-radius: 50%;
   margin: 0 auto;
 }
@@ -351,7 +351,7 @@ a {
 /* line 186, ../sass/styles.scss */
 .process h3 {
   font-size: 23px;
-  color: #2fb7c5;
+  color: #1ABAC5;
   margin-top: 20px;
   margin-bottom: 10px;
 }
@@ -374,20 +374,20 @@ a {
 }
 /* line 209, ../sass/styles.scss */
 .works.blue-background {
-  background-color: #2fb7c5;
+  background-color: #1ABAC5;
 }
 /* line 212, ../sass/styles.scss */
 .works.dark-background {
-  background-color: #3e2b32;
+  background-color: #3E2B32;
 }
 /* line 215, ../sass/styles.scss */
 .works.green-background {
-  background-color: #b4c494;
+  background-color: #B4C494;
 }
 /* line 218, ../sass/styles.scss */
 .works h2 {
   font-size: 50px;
-  color: white;
+  color: #ffffff;
   padding-bottom: 20px;
 }
 /* line 223, ../sass/styles.scss */
@@ -396,7 +396,7 @@ a {
   font-weight: 300;
   letter-spacing: 0.01em;
   line-height: 24px;
-  color: white;
+  color: #ffffff;
   margin-bottom: 30px;
   display: block;
 }
@@ -465,7 +465,7 @@ a {
 .contact h4 {
   font-weight: bold;
   padding-bottom: 20px;
-  color: white;
+  color: #ffffff;
 }
 
 /* line 291, ../sass/styles.scss */
@@ -484,7 +484,7 @@ a {
   font-size: 20px;
   font-weight: 200;
   line-height: 28px;
-  color: white;
+  color: #ffffff;
 }
 @media all and (max-width: 40em) {
   /* line 295, ../sass/styles.scss */
