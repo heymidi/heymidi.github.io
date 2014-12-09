@@ -206,7 +206,7 @@ a {
 
 /* line 60, ../sass/styles.scss */
 .intro {
-  background-image: url("../images/heymidi-dark.jpg");
+  background-image: url("../images/desktop.jpeg");
   background-position: center bottom;
   background-repeat: none;
   background-size: cover;
@@ -396,7 +396,7 @@ a {
 }
 /* line 225, ../sass/styles.scss */
 .works.dark-background {
-  background-color: #70686B;
+  background-color: #3E2B32;
 }
 /* line 228, ../sass/styles.scss */
 .works.green-background {
