@@ -40,11 +40,11 @@ a {
 		font-size: 18px;
 		list-style-type: none;
 		display: inline-block; 
-		color: $font-color-secondary;
 		margin-right: 15px;
 	}
 
 	a {
+		color: $font-color-tertiary;
 		text-decoration: none;
 	}
 
@@ -55,6 +55,9 @@ a {
 
 .sticky {
 	background: #5B4954;
+	a {
+		color: $font-color-secondary;
+	}
 }
 
 .intro {
@@ -139,7 +142,7 @@ a {
 
 .offer-icon {
 	float: left;
-	width: 180px;
+	width: 160px;
 	@media all and (max-width: $bp-med) {
 		display: none;		
 	}

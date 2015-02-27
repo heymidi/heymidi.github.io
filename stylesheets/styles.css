@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -185,11 +185,11 @@ a {
   font-size: 18px;
   list-style-type: none;
   display: inline-block;
-  color: #ffffff;
   margin-right: 15px;
 }
-/* line 47, ../sass/styles.scss */
+/* line 46, ../sass/styles.scss */
 .nav a {
+  color: #3f3f3f;
   text-decoration: none;
 }
 @media all and (max-width: 40em) {
@@ -203,8 +203,12 @@ a {
 .sticky {
   background: #5B4954;
 }
+/* line 58, ../sass/styles.scss */
+.sticky a {
+  color: #ffffff;
+}
 
-/* line 60, ../sass/styles.scss */
+/* line 63, ../sass/styles.scss */
 .intro {
   background-image: url("../images/desktop.jpeg");
   background-position: center bottom;
@@ -213,13 +217,13 @@ a {
   height: 800px;
   width: 100%;
 }
-/* line 68, ../sass/styles.scss */
+/* line 71, ../sass/styles.scss */
 .intro h1 {
   font-size: 70px;
   color: #ffffff;
   text-align: center;
 }
-/* line 73, ../sass/styles.scss */
+/* line 76, ../sass/styles.scss */
 .intro img {
   width: 400px;
   margin: 0 auto;
@@ -227,13 +231,13 @@ a {
   padding-top: 180px;
 }
 @media all and (max-width: 40em) {
-  /* line 73, ../sass/styles.scss */
+  /* line 76, ../sass/styles.scss */
   .intro img {
     width: 300px;
   }
 }
 
-/* line 84, ../sass/styles.scss */
+/* line 87, ../sass/styles.scss */
 .title {
   font-size: 50px;
   color: #1ABAC5;
@@ -241,20 +245,20 @@ a {
   padding-bottom: 50px;
 }
 
-/* line 91, ../sass/styles.scss */
+/* line 94, ../sass/styles.scss */
 .offerings {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
   background-image: url("../images/pw-pattern.png");
 }
-/* line 98, ../sass/styles.scss */
+/* line 101, ../sass/styles.scss */
 .offerings h3 {
   font-size: 23px;
   color: #1ABAC5;
   padding-bottom: 5px;
 }
-/* line 103, ../sass/styles.scss */
+/* line 106, ../sass/styles.scss */
 .offerings span {
   font-size: 16px;
   letter-spacing: 0.01em;
@@ -262,59 +266,59 @@ a {
   color: #323232;
 }
 @media all and (min-width: 58em) {
-  /* line 111, ../sass/styles.scss */
+  /* line 114, ../sass/styles.scss */
   .offerings .row-one {
     width: 90%;
     margin: 0 auto;
   }
-  /* line 116, ../sass/styles.scss */
+  /* line 119, ../sass/styles.scss */
   .offerings .row-two {
     width: 90%;
     margin: 0 auto;
     margin-top: 50px;
   }
-  /* line 121, ../sass/styles.scss */
+  /* line 124, ../sass/styles.scss */
   .offerings .spaceLeft {
     margin-left: 10%;
   }
-  /* line 124, ../sass/styles.scss */
+  /* line 127, ../sass/styles.scss */
   .offerings .spaceRight {
     margin-right: 10%;
   }
 }
 
-/* line 130, ../sass/styles.scss */
+/* line 133, ../sass/styles.scss */
 .offer {
   float: right;
   width: 300px;
 }
 @media all and (max-width: 58em) {
-  /* line 130, ../sass/styles.scss */
+  /* line 133, ../sass/styles.scss */
   .offer {
     width: 100%;
     margin-bottom: 30px;
   }
 }
 
-/* line 140, ../sass/styles.scss */
+/* line 143, ../sass/styles.scss */
 .offer-icon {
   float: left;
-  width: 180px;
+  width: 160px;
 }
 @media all and (max-width: 46.8em) {
-  /* line 140, ../sass/styles.scss */
+  /* line 143, ../sass/styles.scss */
   .offer-icon {
     display: none;
   }
 }
 
-/* line 148, ../sass/styles.scss */
+/* line 151, ../sass/styles.scss */
 .services {
   width: 45%;
   min-width: 300px;
 }
 @media all and (max-width: 46.8em) {
-  /* line 148, ../sass/styles.scss */
+  /* line 151, ../sass/styles.scss */
   .services {
     width: 90%;
     padding-left: 10px;
@@ -322,33 +326,33 @@ a {
   }
 }
 
-/* line 160, ../sass/styles.scss */
+/* line 163, ../sass/styles.scss */
 .center {
   margin: 0 auto;
   max-width: 1050px;
 }
 @media all and (max-width: 58em) {
-  /* line 160, ../sass/styles.scss */
+  /* line 163, ../sass/styles.scss */
   .center {
     width: 300px;
   }
 }
 
-/* line 168, ../sass/styles.scss */
+/* line 171, ../sass/styles.scss */
 .process {
   width: 100%;
   padding-top: 50px;
   text-align: center;
   background-image: url("../images/pw-pattern.png");
 }
-/* line 174, ../sass/styles.scss */
+/* line 177, ../sass/styles.scss */
 .process h3 {
   font-size: 23px;
   color: #1ABAC5;
   margin-top: 20px;
   margin-bottom: 10px;
 }
-/* line 180, ../sass/styles.scss */
+/* line 183, ../sass/styles.scss */
 .process li {
   font-size: 16px;
   font-weight: 300;
@@ -356,7 +360,7 @@ a {
   line-height: 24px;
   color: #323232;
 }
-/* line 188, ../sass/styles.scss */
+/* line 191, ../sass/styles.scss */
 .process .step-icon {
   width: 200px;
   height: 200px;
@@ -364,16 +368,16 @@ a {
   border-radius: 50%;
   margin: 0 auto;
 }
-/* line 195, ../sass/styles.scss */
+/* line 198, ../sass/styles.scss */
 .process .step-icon .icon {
   margin: 20px auto 0;
   width: 120px;
 }
-/* line 199, ../sass/styles.scss */
+/* line 202, ../sass/styles.scss */
 .process .step-icon .icon.extra {
   padding-top: 20px;
 }
-/* line 205, ../sass/styles.scss */
+/* line 208, ../sass/styles.scss */
 .process .step {
   width: 300px;
   float: left;
@@ -382,7 +386,7 @@ a {
   margin-right: 1.8%;
 }
 
-/* line 214, ../sass/styles.scss */
+/* line 217, ../sass/styles.scss */
 .works {
   width: 80%;
   padding-left: 10%;
@@ -390,26 +394,26 @@ a {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/* line 222, ../sass/styles.scss */
+/* line 225, ../sass/styles.scss */
 .works.blue-background {
   background-color: #1ABAC5;
 }
-/* line 225, ../sass/styles.scss */
+/* line 228, ../sass/styles.scss */
 .works.dark-background {
   background-color: #3E2B32;
 }
-/* line 228, ../sass/styles.scss */
+/* line 231, ../sass/styles.scss */
 .works.green-background {
   background-color: #B4C494;
 }
-/* line 231, ../sass/styles.scss */
+/* line 234, ../sass/styles.scss */
 .works h2 {
   font-size: 50px;
   color: #ffffff;
   padding-bottom: 20px;
   margin-top: 20px;
 }
-/* line 237, ../sass/styles.scss */
+/* line 240, ../sass/styles.scss */
 .works span {
   font-size: 18px;
   font-weight: 300;
@@ -419,7 +423,7 @@ a {
   margin-bottom: 30px;
   display: block;
 }
-/* line 246, ../sass/styles.scss */
+/* line 249, ../sass/styles.scss */
 .works .view-site {
   border: 1px solid #fff;
   color: #fff;
@@ -430,19 +434,19 @@ a {
   text-align: center;
   width: 120px;
 }
-/* line 256, ../sass/styles.scss */
+/* line 259, ../sass/styles.scss */
 .works img {
   width: 50%;
 }
 @media all and (max-width: 46.8em) {
-  /* line 260, ../sass/styles.scss */
+  /* line 263, ../sass/styles.scss */
   .works img {
     width: 250px;
   }
 }
 
 @media all and (min-width: 46.8em) {
-  /* line 266, ../sass/styles.scss */
+  /* line 269, ../sass/styles.scss */
   .about {
     width: 45%;
     min-width: 300px;
@@ -451,7 +455,7 @@ a {
   }
 }
 
-/* line 282, ../sass/styles.scss */
+/* line 285, ../sass/styles.scss */
 .profile {
   width: 80%;
   padding-left: 10%;
@@ -460,17 +464,17 @@ a {
   padding-bottom: 50px;
   background-color: #FBFCFC;
 }
-/* line 290, ../sass/styles.scss */
+/* line 293, ../sass/styles.scss */
 .profile img {
   max-width: 400px;
 }
-/* line 293, ../sass/styles.scss */
+/* line 296, ../sass/styles.scss */
 .profile h2 {
   font-size: 24px;
   margin-bottom: 10px;
   margin-top: 20px;
 }
-/* line 298, ../sass/styles.scss */
+/* line 301, ../sass/styles.scss */
 .profile span {
   line-height: 26px;
   font-size: 16px;
@@ -478,17 +482,17 @@ a {
   display: block;
 }
 @media all and (max-width: 58em) {
-  /* line 305, ../sass/styles.scss */
+  /* line 308, ../sass/styles.scss */
   .profile img {
     width: 100%;
   }
-  /* line 308, ../sass/styles.scss */
+  /* line 311, ../sass/styles.scss */
   .profile span {
     width: 100%;
   }
 }
 
-/* line 314, ../sass/styles.scss */
+/* line 317, ../sass/styles.scss */
 .contact {
   background-image: url("../images/social.jpg");
   background-repeat: none;
@@ -498,24 +502,24 @@ a {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/* line 323, ../sass/styles.scss */
+/* line 326, ../sass/styles.scss */
 .contact h4 {
   font-weight: bold;
   padding-bottom: 20px;
   color: #ffffff;
 }
 
-/* line 330, ../sass/styles.scss */
+/* line 333, ../sass/styles.scss */
 .row {
   margin-top: 70px;
 }
 
-/* line 334, ../sass/styles.scss */
+/* line 337, ../sass/styles.scss */
 .contact-details {
   width: 33.33%;
   float: left;
 }
-/* line 338, ../sass/styles.scss */
+/* line 341, ../sass/styles.scss */
 .contact-details li {
   list-style-type: none;
   font-size: 20px;
@@ -524,62 +528,62 @@ a {
   color: #ffffff;
 }
 @media all and (max-width: 40em) {
-  /* line 334, ../sass/styles.scss */
+  /* line 337, ../sass/styles.scss */
   .contact-details {
     display: none;
   }
 }
 
-/* line 350, ../sass/styles.scss */
+/* line 353, ../sass/styles.scss */
 .icon-row {
   margin: 0 auto;
   width: 270px;
 }
 
-/* line 355, ../sass/styles.scss */
+/* line 358, ../sass/styles.scss */
 .social-icon {
   margin-left: 20px;
   margin-right: 20px;
 }
 
-/* line 360, ../sass/styles.scss */
+/* line 363, ../sass/styles.scss */
 .right {
   float: right;
 }
 @media all and (max-width: 46.8em) {
-  /* line 360, ../sass/styles.scss */
+  /* line 363, ../sass/styles.scss */
   .right {
     float: none;
     clear: both;
   }
 }
 
-/* line 367, ../sass/styles.scss */
+/* line 370, ../sass/styles.scss */
 .left {
   float: left;
 }
 @media all and (max-width: 46.8em) {
-  /* line 367, ../sass/styles.scss */
+  /* line 370, ../sass/styles.scss */
   .left {
     float: none;
     clear: both;
   }
 }
 
-/* line 375, ../sass/styles.scss */
+/* line 378, ../sass/styles.scss */
 .clear {
   clear: both;
 }
 
 /* animations */
 @media all and (max-width: 40em) {
-  /* line 380, ../sass/styles.scss */
+  /* line 383, ../sass/styles.scss */
   .fade-right {
     opacity: 1;
   }
 }
 @media all and (min-width: 40em) {
-  /* line 380, ../sass/styles.scss */
+  /* line 383, ../sass/styles.scss */
   .fade-right {
     opacity: 0;
     transform: translateX(-30px);
@@ -589,7 +593,7 @@ a {
 }
 
 @media all and (min-width: 40em) {
-  /* line 391, ../sass/styles.scss */
+  /* line 394, ../sass/styles.scss */
   .fade-right.in {
     opacity: 1;
     transform: translateX(0px);
@@ -597,13 +601,13 @@ a {
 }
 
 @media all and (max-width: 40em) {
-  /* line 398, ../sass/styles.scss */
+  /* line 401, ../sass/styles.scss */
   .fade-left {
     opacity: 1;
   }
 }
 @media all and (min-width: 40em) {
-  /* line 398, ../sass/styles.scss */
+  /* line 401, ../sass/styles.scss */
   .fade-left {
     opacity: 0;
     transform: translateX(30px);
@@ -613,7 +617,7 @@ a {
 }
 
 @media all and (min-width: 40em) {
-  /* line 410, ../sass/styles.scss */
+  /* line 413, ../sass/styles.scss */
   .fade-left.in {
     opacity: 1;
     transform: translateX(0px);
